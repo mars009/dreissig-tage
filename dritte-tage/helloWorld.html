@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello world</title>
+    <!-- Script tags including React -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+    <!-- Using Babel to transpile our ES5 to ES6-->
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+</head>
+
+<body>
+    <div id="app"></div>
+    <!--NOTE: We need to use a script tag of 'text/babel' to signal babel to handle
+    the execution of the code inside this script body-->
+    <script type="text/babel">
+        class App extends React.Component {
+          render() {
+            return <h1>Hello World from our React App</h1>
+          }
+        }
+        
+        // Don't forget to call ReactDOM.render(<what>, <where>) or nothing will be rendered
+        ReactDOM.render(<App/>, document.querySelector('#app'));
+    </script>
+</body>
+
+</html>
