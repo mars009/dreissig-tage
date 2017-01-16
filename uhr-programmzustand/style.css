@@ -1,0 +1,10 @@
+.clock {
+    background-image: linear-gradient( mediumspringgreen, mediumseagreen);
+    border-radius: 10px;
+    font-size: 22px;
+    height: 30px;
+    padding-top: 11px;
+    text-align: center;
+    width: 150px;
+    color: white;
+}
